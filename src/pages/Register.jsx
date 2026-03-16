@@ -1,12 +1,13 @@
 import { Form, Input, Button, Alert } from "antd";
 import { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async (values) => {
     setLoading(true);
@@ -27,6 +28,7 @@ export default function Register() {
       );
 
       setSuccess(res.data.message);
+      navigate("/login");
 
     } catch (err) {
       setError(err.response?.data?.message || "Registration failed");
