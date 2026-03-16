@@ -26,8 +26,8 @@ export default function Navbar() {
         <HomeOutlined className="text-xl hover:text-green-600 cursor-pointer" />
       </Link>
     </div>
-    
-        <Link to="/" className="text-2xl font-bold">
+
+        <Link to="/home" className="text-2xl font-bold">
           Medium
         </Link>
 
