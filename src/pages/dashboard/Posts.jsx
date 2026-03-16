@@ -72,21 +72,6 @@ export default function Posts() {
         new Date(record.createdAt).toLocaleDateString(),
     },
 
-    {
-      title: "Action",
-      key: "action",
-      render: (_, record) => (
-        <Popconfirm
-          title="Delete this post?"
-          onConfirm={() => handleDelete(record._id)}
-        >
-          <Button danger>
-            Delete
-          </Button>
-        </Popconfirm>
-      ),
-    },
-
   ];
 
   if (loading) return <Spin size="large" />;

@@ -66,6 +66,58 @@ export default function Home() {
     <div className="space-y-4">
 
       {[
+
+  {
+    name: "Sarah Johnson",
+    username: "sarahcodes",
+    bio: "Frontend developer sharing React tips.",
+  },
+  {
+    name: "Michael Chen",
+    username: "mikebuilds",
+    bio: "Full-stack dev writing about Node.js and APIs.",
+  },
+  {
+    name: "Aisha Bello",
+    username: "aishatech",
+    bio: "UI/UX enthusiast exploring clean design.",
+  },
+  {
+    name: "Daniel Martinez",
+    username: "danwritescode",
+    bio: "JavaScript lover documenting my coding journey.",
+  },
+  {
+    name: "Emily Carter",
+    username: "emilydev",
+    bio: "Building web apps and sharing dev insights.",
+  },
+  {
+    name: "James Wilson",
+    username: "jswilson",
+    bio: "Backend developer focused on scalability.",
+  },
+  {
+    name: "Fatima Hassan",
+    username: "fatimatech",
+    bio: "Tech writer simplifying complex topics.",
+  },
+  {
+    name: "Luca Romano",
+    username: "lucadev",
+    bio: "React & TypeScript advocate.",
+  },
+  {
+    name: "Kevin O'Connor",
+    username: "kevinbuilds",
+    bio: "Learning something new in code every day.",
+  },
+  {
+    name: "Priya Patel",
+    username: "priyatech",
+    bio: "Sharing frontend tricks and productivity hacks.",
+  },
+
         {
           name: "Sarah Johnson",
           username: "sarahcodes",

@@ -2,6 +2,9 @@ import { Input, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
+import { HomeOutlined } from "@ant-design/icons";
+
+
 
 const { Search } = Input;
 
@@ -10,7 +13,7 @@ export default function Navbar() {
 
   const handleLogout = () => {
   localStorage.removeItem("token"); // remove token
-  navigate("/login"); // redirect
+  navigate("/"); // redirect
 };
 
   return (
@@ -18,6 +21,12 @@ export default function Navbar() {
 
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
 
+    <div className="flex items-center gap-4">
+      <Link to="/home">
+        <HomeOutlined className="text-xl hover:text-green-600 cursor-pointer" />
+      </Link>
+    </div>
+    
         <Link to="/" className="text-2xl font-bold">
           Medium
         </Link>
